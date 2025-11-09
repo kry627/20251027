@@ -129,6 +129,7 @@ function _attachIframeControls() {
 	_ensureIframeEls();
 		const link = document.getElementById('open-projects');
 		const handout = document.getElementById('open-handout');
+		const test3 = document.getElementById('open-test3');
 		const closeBtn = document.getElementById('iframeClose');
 		if (link) {
 			link.addEventListener('click', (e) => {
@@ -142,6 +143,13 @@ function _attachIframeControls() {
 			handout.addEventListener('click', (e) => {
 				e.preventDefault();
 				openIframe('https://hackmd.io/@9AnKkXToQiSXcq7r78pFYQ/S1RJuQRjlx');
+				closeMenu();
+			});
+		}
+		if (test3) {
+			test3.addEventListener('click', (e) => {
+				e.preventDefault();
+				openIframe('https://kry627.github.io/20251103/');
 				closeMenu();
 			});
 		}
